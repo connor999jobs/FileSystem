@@ -16,6 +16,7 @@ import java.util.*;
 
 public class ScannerUtils {
 
+    @SneakyThrows
     public void performCommands(Context context, Map<String, Command> commands) {
         Scanner scanner = new Scanner(System.in);
         while (true) {

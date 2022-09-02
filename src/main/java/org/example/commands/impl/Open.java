@@ -5,6 +5,7 @@ import org.example.commands.Command;
 import org.example.model.Context;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -16,16 +17,15 @@ public class Open extends Command {
     }
 
     @Override
+    @SneakyThrows
     public String execute(List<String> args) {
         File currentFile = context.getCurrentDirectory();
-        String content = null;
-        try {
-            try (Scanner scanner = new Scanner(currentFile, StandardCharsets.UTF_8)) {
-                content = scanner.useDelimiter("\\A").next();
+        Scanner scanner = new Scanner(currentFile, StandardCharsets.UTF_8);
+        String line = "";
+            while (scanner.hasNextLine()){
+                line = scanner.nextLine();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return content;
+
+        return line;
     }
 }
