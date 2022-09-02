@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6692e4eb-0d03-4a9f-8044-855b802b04d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6692e4eb-0d03-4a9f-8044-855b802b04d6" name="Changes" comment="Some fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Cd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Cd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Ls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Open.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Pwd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Pwd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ScannerUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +74,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662113589538</updated>
-      <workItem from="1662113592663" duration="7645000" />
+      <workItem from="1662113592663" duration="9582000" />
     </task>
+    <task id="LOCAL-00001" summary="Some fix">
+      <created>1662122847225</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662122847225</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +99,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some fix" />
   </component>
 </project>

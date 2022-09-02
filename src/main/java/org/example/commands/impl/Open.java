@@ -1,8 +1,14 @@
 package org.example.commands.impl;
 
+import lombok.SneakyThrows;
 import org.example.commands.Command;
 import org.example.model.Context;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.Scanner;
 
 public class Open extends Command {
     public Open(Context context) {
@@ -11,6 +17,15 @@ public class Open extends Command {
 
     @Override
     public String execute(List<String> args) {
-        return null;
+        File currentFile = context.getCurrentDirectory();
+        String content = null;
+        try {
+            try (Scanner scanner = new Scanner(currentFile, StandardCharsets.UTF_8)) {
+                content = scanner.useDelimiter("\\A").next();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return content;
     }
 }
