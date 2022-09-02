@@ -2,7 +2,7 @@
 Реализация небольшой файловой системи, для походов по директрориям, поиску файлов, и прочего. 
 Задания, которые нужно реализвовать.
 File Manager
-1. View file (TXT) in console
+1. View file (TXT) in console - done!
 2. Add text to the end of file
 3. Add text to specific location ** (edited) 
 4. LS   --  Табличкой выводилось
