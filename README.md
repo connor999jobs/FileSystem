@@ -11,3 +11,4 @@ File Manager
 7. Mkfile
 8. Rm file / Rm dir
 9. Rm -r -- recursive
+10. LS tree 2/3/4/5 .. n  DEPTH -- view file system as a tree  ***
