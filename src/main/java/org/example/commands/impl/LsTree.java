@@ -30,9 +30,8 @@ public class LsTree extends Command{
             throw new IllegalArgumentException("folder is not a Directory");
         }
         builder.append(getIndentString(in));
-        builder.append("+--");
+        builder.append("├──");
         builder.append(folder.getName());
-        builder.append("/");
         builder.append("\n");
         for (File file : Objects.requireNonNull(folder.listFiles())) {
             if (file.isDirectory()) {
@@ -45,12 +44,12 @@ public class LsTree extends Command{
 
     private static void printFile(File file, int indent, StringBuilder sb) {
         sb.append(getIndentString(indent));
-        sb.append("+--");
+        sb.append("└──");
         sb.append(file.getName());
         sb.append("\n");
     }
 
     private static String getIndentString(int indent) {
-        return "|  ".repeat(Math.max(0, indent));
+        return "│  ".repeat(Math.max(0, indent));
     }
 }

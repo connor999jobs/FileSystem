@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6692e4eb-0d03-4a9f-8044-855b802b04d6" name="Changes" comment="Add Mkdir, MkFile and Rm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/LsTree.java" afterDir="false" />
+    <list default="true" id="6692e4eb-0d03-4a9f-8044-855b802b04d6" name="Changes" comment="10. LS tree 2/3/4/5.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/FindFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/AddText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mkdir/mkdir2Ex/Mk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mkdir/mkdir2Ex/mk.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Ls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Ls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/LsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/LsTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/MkDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/MkDir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/MkFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/MkFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Open.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Open.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Rm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Rm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Write.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/impl/Write.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mkdir/mk/mm.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,7 +89,10 @@
       <updated>1662113589538</updated>
       <workItem from="1662113592663" duration="20343000" />
       <workItem from="1662152985308" duration="2580000" />
-      <workItem from="1662221263486" duration="902000" />
+      <workItem from="1662221263486" duration="1771000" />
+      <workItem from="1662224245712" duration="817000" />
+      <workItem from="1662288600927" duration="4727000" />
+      <workItem from="1662307838811" duration="9129000" />
     </task>
     <task id="LOCAL-00001" summary="Some fix">
       <created>1662122847225</created>
@@ -113,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662155458978</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="10. LS tree 2/3/4/5.">
+      <created>1662222192436</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662222192436</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +159,7 @@
     <MESSAGE value="Add View file (TXT) in console" />
     <MESSAGE value="fix View file (TXT) in console + try Add text to the end of file" />
     <MESSAGE value="Add Mkdir, MkFile and Rm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Mkdir, MkFile and Rm" />
+    <MESSAGE value="10. LS tree 2/3/4/5." />
+    <option name="LAST_COMMIT_MESSAGE" value="10. LS tree 2/3/4/5." />
   </component>
 </project>

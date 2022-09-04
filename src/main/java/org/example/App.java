@@ -25,6 +25,9 @@ public class App {
         Path currentRelativePath = Paths.get("");
         String s = currentRelativePath.toAbsolutePath().toString();
 
+
+//        System.setProperty("PWD", "C:\\Users\\konno\\Desktop\\Java Core\\FileSystem\\FileSystem");
+
         Context context =new Context(null, new File(s));
         Map<String, Command> commandMap = scannerUtils.getCommands(context);
         context.setCommandMap(commandMap);

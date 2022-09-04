@@ -1,6 +1,7 @@
 package org.example.commands.impl;
 
 import lombok.SneakyThrows;
+import org.apache.commons.io.FileUtils;
 import org.example.commands.Command;
 import org.example.model.Context;
 
@@ -20,12 +21,13 @@ public class Open extends Command {
     @SneakyThrows
     public String execute(List<String> args) {
         File currentFile = context.getCurrentDirectory();
-        Scanner scanner = new Scanner(currentFile, StandardCharsets.UTF_8);
-        String line = "";
-            while (scanner.hasNextLine()){
-                line = scanner.nextLine();
-            }
-
-        return line;
+//        Scanner scanner = new Scanner(currentFile, StandardCharsets.UTF_8);
+//        String line = "";
+//            while (scanner.hasNextLine()){
+//                line = scanner.nextLine();
+//            }
+//
+//        return line;
+        return FileUtils.readFileToString(currentFile, StandardCharsets.UTF_8);
     }
 }

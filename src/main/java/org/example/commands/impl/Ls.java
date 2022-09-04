@@ -1,5 +1,6 @@
 package org.example.commands.impl;
 
+import org.apache.commons.io.FileUtils;
 import org.example.commands.Command;
 import org.example.model.Context;
 import java.io.File;
@@ -17,7 +18,8 @@ public class Ls extends Command {
         StringBuilder result = new StringBuilder();
         if (allFiles != null){
             for (File each : allFiles){
-                result.append(each.getName()).append(":").append(each.getUsableSpace()).append("\n");
+                String size = String.valueOf(FileUtils.sizeOfDirectory(file));
+                result.append(each.getName()).append(":").append(each.getUsableSpace()).append(" Size: ").append(size).append("\n");
             }
         }
         return result.toString();

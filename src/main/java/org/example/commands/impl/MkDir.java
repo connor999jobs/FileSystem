@@ -18,11 +18,26 @@ public class MkDir extends Command {
     @Override
     @SneakyThrows
     public String execute(List<String> args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Specify the path,  where you want to create a new directory.");
-        File file = new File(scanner.nextLine());
-        String path = file.getPath();
-        FileUtils.forceMkdir(new File(path));
-        return "New folder was create in " + path;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Specify the path,  where you want to create a new directory.");
+//        File file = new File(scanner.nextLine());
+//
+//        String path = file.getPath();
+//        FileUtils.forceMkdir(new File(path));
+//        return "New folder was create in " + path;
+
+        String path = args.get(0);
+        //Creating a File object
+        File file = new File(path);
+        //Creating the directory
+        boolean bool = file.mkdir();
+        if (bool) {
+            System.out.println("Directory created successfully");
+        } else {
+            System.out.println("Sorry couldn’t create specified directory");
+        }
+        return file.getName();
+
+
     }
 }

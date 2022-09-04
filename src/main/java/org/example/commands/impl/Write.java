@@ -2,18 +2,14 @@ package org.example.commands.impl;
 
 import lombok.SneakyThrows;
 import org.example.commands.Command;
+import org.example.commands.FindFile;
 import org.example.model.Context;
-import org.netbeans.lib.cvsclient.file.FileUtils;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.LinkOption;
 import java.util.List;
 import java.util.Scanner;
 
-public class Write extends Command {
+public class Write extends Command implements FindFile {
     public Write(Context context) {
         super(context);
     }

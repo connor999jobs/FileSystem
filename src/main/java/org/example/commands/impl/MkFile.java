@@ -17,15 +17,30 @@ public class MkFile extends Command {
     @Override
     @SneakyThrows
     public String execute(List<String> args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Specify the path,  where you want to create a new file.");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Specify the path,  where you want to create a new file.");
+//
+//        String path = scanner.nextLine();
+//        File file = new File(path);
+//        if (!file.exists()){
+//            file.createNewFile();
+//        }
+//        return "New file was create in " + path;
 
-        String path = scanner.nextLine();
+        String path = args.get(0);
+        //Creating a File object
         File file = new File(path);
-        if (!file.exists()){
-            file.createNewFile();
+        //Creating the directory
+        boolean bool = file.createNewFile();
+        if (bool) {
+            System.out.println("File created successfully");
+        } else {
+            System.out.println("Sorry couldn’t create specified directory");
         }
-        return "New file was create in " + path;
+        return file.getName();
+
+
+
     }
 
 }
