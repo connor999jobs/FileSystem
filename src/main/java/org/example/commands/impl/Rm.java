@@ -21,9 +21,15 @@ public class Rm extends Command {
     @Override
     @SneakyThrows
     public String execute(List<String> args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Specify the path,  where you want to delete file.");
-        File file = new File(scanner.nextLine());
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Specify the path,  where you want to delete file.");
+//        File file = new File(scanner.nextLine());
+        if (args.isEmpty()){
+            System.out.println("Please, enter argument");
+        }
+        File curren = context.getCurrentDirectory();
+        File file = new File(curren.getPath(), args.get(0));
+
         String path = file.getPath();
         FileUtils.deleteDirectory(file);
 

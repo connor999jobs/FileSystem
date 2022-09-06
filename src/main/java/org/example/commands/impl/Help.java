@@ -13,7 +13,6 @@ public class Help extends Command {
     @Override
     public String execute(List<String> args) {
         Map<String, Command> commandMap = context.getCommandMap();
-
         StringBuilder result = new StringBuilder("Available commands:\n");
         if (commandMap != null) {
             for (String each : commandMap.keySet()) {

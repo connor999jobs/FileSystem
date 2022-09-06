@@ -27,9 +27,12 @@ public class MkFile extends Command {
 //        }
 //        return "New file was create in " + path;
 
-        String path = args.get(0);
+        if (args.isEmpty()){
+            System.out.println("Please, enter argument");
+        }
+        File curren = context.getCurrentDirectory();
         //Creating a File object
-        File file = new File(path);
+        File file = new File(curren.getPath(), args.get(0));
         //Creating the directory
         boolean bool = file.createNewFile();
         if (bool) {

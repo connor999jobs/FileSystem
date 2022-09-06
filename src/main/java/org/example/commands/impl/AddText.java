@@ -20,6 +20,9 @@ public class AddText extends Command implements FindFile {
     @SneakyThrows
     @Override
     public String execute(List<String> args) {
+        if (args.isEmpty()){
+            System.out.println("Incorrect args, please try again.");
+        }
         File file = findFile(args, context);
         System.out.println("Where do you want to add your text?" +
                 "Enter: position or end");
